@@ -1,0 +1,324 @@
+/*FUENTES*/
+
+@font-face {
+    font-family:"Bodoni Moda";
+    src:url('fonts/BodoniModa-VariableFont_opsz\,wght.ttf');
+    src:url('fonts/BodoniModa-VariableFont_opsz\,wght.eot?#iefix') format('embedded-opentype'),
+            url('fonts/BodoniModa-VariableFont_opsz\,wght.woff') format('woff'),
+            url('fonts/BodoniModa-VariableFont_opsz\,wght.ttf') format('truetype'),
+            url('fonts/BodoniModa-VariableFont_opsz\,wght.ttf') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family:"Vollkorn";
+    src:url('fonts/Vollkorn-VariableFont_wght.ttf');
+    src:url('fonts/Vollkorn-VariableFont_wght.eot?#iefix') format('embedded-opentype'),
+            url('fonts/Vollkorn-VariableFont_wght.woff') format('woff'),
+            url('fonts/Vollkorn-VariableFont_wght.ttf') format('truetype'),
+            url('fonts/Vollkorn-VariableFont_wght.ttf') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+
+/*ESTILOS GENERALES*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+body{
+    background-color: #479063;
+    background: linear-gradient(to right, #737373, #499265);
+    background-size: 100% 100%;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    font-size: 7rem;
+    /*margin-top: 100px;*/
+    margin-top: 50px;
+    color: white;
+}
+
+
+h2 {
+    font-family: 'Bodoni Moda', serif;
+    text-align: center;
+    font-size: 4rem;
+ margin-top: 12px;
+    color: white
+}
+
+h3 {
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.paragraph {
+    font-family: 'Vollkorn', serif;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.paragraph_1{
+    font-family: 'Vollkorn', serif;
+    margin-top: 0px;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.principal{
+    display: inline-block;
+}
+
+.imga {
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.imga > a {
+    text-decoration: none;
+}
+
+.circra_img{
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 10%; 
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.circra_img:hover{
+    -moz-box-shadow: 0 0 3px rgb(0, 0, 0);
+    -webkit-box-shadow: 0 0 3px rgb(0, 0, 0);
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+}
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    body{
+        background-color: #479063;
+        background: linear-gradient(to right,#499265 #737373) ;
+        background-size: 100% 100%;
+    }
+
+    .container{
+            margin-top: 100px;
+        }
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.principal {
+    margin-top: 10px;
+}
+
+.paragraph{
+    display: block;
+    margin: 0 auto;
+    /*font-size: 1rem;*/
+}
+
+.paragraph_1 {
+    display: block;
+    /*font-size: 1rem;*/
+}
+
+.circra_img {
+margin-left: 7px;
+max-width: 20%;
+}
+}
+
+/*Celulares*/
+
+@media (min-width: 320px) and (max-width: 630px){
+    body{
+        background-color: #479063;
+        background: linear-gradient(to right,#499265 #737373) ;
+        background-size: 100% 100%;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+    .paragraph{
+        margin-top: 10px;
+        /*font-size: 0.8rem;*/
+    }
+    
+    .paragraph_1 {
+        /*margin-top: 10px;*/
+        display: block;
+        /*font-size: 0.8rem;*/
+    }
+
+    .circra_img {
+        display: block;
+        margin: 0 auto;
+        max-width: 30%;
+        margin-bottom: 20px;
+        }
+        }
+
+
+@media (min-width: 630px) and (max-width: 767px){
+    .container{
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1004px) and (orientation: portrait){
+
+.container{
+    margin-top: 200px;
+}
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    margin-top: 1px;
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+.paragraph{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 2.5rem;
+    margin-top: 25px;
+}
+
+.paragraph_1 {
+    display: inline-block;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+.circra_img {
+    margin: 0 auto;
+    max-width: 25%;
+    margin-left: 7px;
+    }
+}
+
+
+/*Celulares (landscape)*/
+@media (min-width: 481px) and (max-width: 777px) and (orientation:landscape) {
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.principal {
+    width: 100%;
+    display: inline-block;
+}
+
+.paragraph{
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.paragraph_1 {
+    font-size: 1rem;
+}
+
+}
+
+/*Tablets (landscape)*/
+  @media (min-width: 776px) and (max-width: 1024px) and (orientation: landscape) {
+    .container{
+        margin-top: 0px;
+    }
+  
+    h1 {
+        font-size: 5rem;
+    }
+    
+    h2 {
+        margin-top: 0px;
+        font-size: 3.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    
+    .principal {
+        width: 100%;
+    }
+    
+    .paragraph{
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+    
+    .paragraph_1 {
+        font-size: 1.5rem;
+        display: inline-block;
+    }
+    .circra_img {
+        margin-left: 7px;
+        max-width: 15%;
+        }
+  }
